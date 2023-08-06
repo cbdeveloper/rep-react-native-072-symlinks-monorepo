@@ -1,5 +1,28 @@
 This repo is a reproducible example of a GitHub issue.
 
+# To reproduce it
+
+- Clone the repo
+- `yarn install`
+- `cd apps/myapp`
+- `yarn run android`
+
+See the [metro.config.js](./apps/myapp/metro.config.js) file, and toggle between options 1 and 2.
+
+```
+const config = {
+  // OPTION 1 - DOES NOT WORK
+  // resolver: {
+  //   unstable_enableSymlinks: true,
+  // },
+
+  // OPTION 2 - WORKS
+  watchFolders: [
+    path.resolve(__dirname, './node_modules/@my-app/foo')
+  ]
+};
+```
+
 ## Monorepo structure
 
 This is the intended project structure:
