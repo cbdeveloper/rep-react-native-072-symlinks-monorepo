@@ -1,0 +1,20 @@
+{
+  "name": "my-monorepo",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "Reproducible example",
+  "repository": "https://github.com/cbdeveloper/rep-react-native-072-symlinks-monorepo",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
