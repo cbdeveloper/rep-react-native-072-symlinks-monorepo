@@ -8,6 +8,7 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
  * @type {import('metro-config').MetroConfig}
  */
 const config = {
+  // projectRoot: path.resolve(__dirname, '.'),
   // OPTION 1 - DOES NOT WORK
   // resolver: {
   //   unstable_enableSymlinks: true,
